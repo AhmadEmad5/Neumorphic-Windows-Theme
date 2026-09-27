@@ -1,0 +1,80 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ==================================================================== -->
+    <!-- NEUMORPHIC COLOR PALETTE TOKENS                                      -->
+    <!-- ==================================================================== -->
+    <Color x:Key="NeumorphicBaseColor">#FF18191C</Color>
+    <Color x:Key="NeumorphicElevatedColor">#FF1E2024</Color>
+    <Color x:Key="NeumorphicInsetColor">#FF141517</Color>
+    <Color x:Key="NeumorphicHighlightLightColor">#14FFFFFF</Color> <!-- ~8% white -->
+    <Color x:Key="NeumorphicHighlightSubtleColor">#0AFFFFFF</Color> <!-- ~4% white -->
+    <Color x:Key="NeumorphicLowShadowColor">#A6000000</Color>      <!-- ~65% black -->
+    <Color x:Key="NeumorphicDeepShadowColor">#CC000000</Color>     <!-- ~80% black -->
+    
+    <Color x:Key="NeumorphicAccentCyanColor">#FF38BDF8</Color>
+    <Color x:Key="NeumorphicAccentIceBlueColor">#FF4F80E2</Color>
+    
+    <Color x:Key="NeumorphicTextPrimaryColor">#FFE2E8F0</Color>
+    <Color x:Key="NeumorphicTextMutedColor">#FF64748B</Color>
+
+    <!-- ==================================================================== -->
+    <!-- SOLID BRUSHES                                                        -->
+    <!-- ==================================================================== -->
+    <SolidColorBrush x:Key="NeumorphicBaseBrush" Color="{StaticResource NeumorphicBaseColor}"/>
+    <SolidColorBrush x:Key="NeumorphicElevatedBrush" Color="{StaticResource NeumorphicElevatedColor}"/>
+    <SolidColorBrush x:Key="NeumorphicInsetBrush" Color="{StaticResource NeumorphicInsetColor}"/>
+    
+    <SolidColorBrush x:Key="NeumorphicHighlightLightBrush" Color="{StaticResource NeumorphicHighlightLightColor}"/>
+    <SolidColorBrush x:Key="NeumorphicLowShadowBrush" Color="{StaticResource NeumorphicLowShadowColor}"/>
+    <SolidColorBrush x:Key="NeumorphicDeepShadowBrush" Color="{StaticResource NeumorphicDeepShadowColor}"/>
+    
+    <SolidColorBrush x:Key="NeumorphicAccentCyanBrush" Color="{StaticResource NeumorphicAccentCyanColor}"/>
+    <SolidColorBrush x:Key="NeumorphicAccentIceBlueBrush" Color="{StaticResource NeumorphicAccentIceBlueColor}"/>
+    
+    <SolidColorBrush x:Key="NeumorphicTextPrimaryBrush" Color="{StaticResource NeumorphicTextPrimaryColor}"/>
+    <SolidColorBrush x:Key="NeumorphicTextMutedBrush" Color="{StaticResource NeumorphicTextMutedColor}"/>
+
+    <!-- ==================================================================== -->
+    <!-- DUAL LIGHTING GRADIENT BRUSHES (135° LIGHT VECTOR)                   -->
+    <!-- ==================================================================== -->
+    
+    <!-- Subtle 0.5px Bezel Stroke with directional light simulation -->
+    <LinearGradientBrush x:Key="NeumorphicBezelBrush" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#18FFFFFF" Offset="0.0"/>
+        <GradientStop Color="#06FFFFFF" Offset="0.4"/>
+        <GradientStop Color="#00000000" Offset="0.6"/>
+        <GradientStop Color="#40000000" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <!-- Convex Surface: gently bulbous extruded surface -->
+    <LinearGradientBrush x:Key="NeumorphicConvexBrush" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#FF23252B" Offset="0.0"/>
+        <GradientStop Color="#FF1E2024" Offset="0.5"/>
+        <GradientStop Color="#FF191A1E" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <!-- Concave Surface: gently sunken interior cavity -->
+    <LinearGradientBrush x:Key="NeumorphicConcaveBrush" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#FF121315" Offset="0.0"/>
+        <GradientStop Color="#FF141517" Offset="0.5"/>
+        <GradientStop Color="#FF1C1D21" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <!-- Accent Gradient: Cyan to Ice Blue -->
+    <LinearGradientBrush x:Key="NeumorphicAccentGradientBrush" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="{StaticResource NeumorphicAccentCyanColor}" Offset="0.0"/>
+        <GradientStop Color="{StaticResource NeumorphicAccentIceBlueColor}" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <!-- ==================================================================== -->
+    <!-- RADII AND GEOMETRY TOKENS                                            -->
+    <!-- ==================================================================== -->
+    <CornerRadius x:Key="NeumorphicContainerRadius">22</CornerRadius>
+    <CornerRadius x:Key="NeumorphicCardRadius">16</CornerRadius>
+    <CornerRadius x:Key="NeumorphicControlRadius">10</CornerRadius>
+    <CornerRadius x:Key="NeumorphicPillRadius">24</CornerRadius>
+    <CornerRadius x:Key="NeumorphicKnobRadius">100</CornerRadius>
+
+</ResourceDictionary>

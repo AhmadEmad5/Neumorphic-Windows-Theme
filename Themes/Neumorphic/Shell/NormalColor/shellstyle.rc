@@ -1,0 +1,11 @@
+// shellstyle.rc - Explorer shell style resource definition
+#include <windows.h>
+
+1 23
+BEGIN
+    "<style resid=\"main\">\r\n"
+    "  <element background=\"rgb(24, 25, 28)\" />\r\n"
+    "  <element id=\"atom(TaskPane)\" background=\"rgb(20, 21, 23)\" />\r\n"
+    "  <element id=\"atom(Header)\" background=\"rgb(30, 32, 36)\" foreground=\"rgb(226, 232, 240)\" />\r\n"
+    "</style>\0"
+END

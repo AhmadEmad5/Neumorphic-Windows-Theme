@@ -1,0 +1,361 @@
+{
+  "themeMetadata": {
+    "themeName": "Neumorphic Dark Soft UI",
+    "version": "1.0.0",
+    "lightingModel": {
+      "type": "DirectionalDualShadow",
+      "angleDegrees": 135,
+      "specularHighlight": "rgba(255, 255, 255, 0.06)",
+      "occlusionShadow": "rgba(0, 0, 0, 0.65)",
+      "baseCanvas": "#18191C",
+      "elevatedSurface": "#1E2024",
+      "sunkenSurface": "#141517",
+      "accentColor": "#38BDF8",
+      "accentIceBlue": "#4F80E2",
+      "textPrimary": "#E2E8F0",
+      "textMuted": "#64748B"
+    }
+  },
+  "classes": {
+    "Window": {
+      "Caption": {
+        "description": "Top window caption and title bar",
+        "parts": {
+          "WP_CAPTION": {
+            "id": 1,
+            "states": {
+              "CS_ACTIVE": {
+                "FillColor": "#1E2024",
+                "BorderColor": "#2A2C32",
+                "TopHighlight": "#353840",
+                "BottomShadow": "#0D0E10",
+                "ContentMargins": [12, 6, 12, 6],
+                "SizingMargins": [8, 8, 8, 8],
+                "TextColor": "#E2E8F0"
+              },
+              "CS_INACTIVE": {
+                "FillColor": "#18191C",
+                "BorderColor": "#222428",
+                "TopHighlight": "#282A30",
+                "BottomShadow": "#0D0E10",
+                "ContentMargins": [12, 6, 12, 6],
+                "SizingMargins": [8, 8, 8, 8],
+                "TextColor": "#64748B"
+              }
+            }
+          },
+          "WP_CLOSEBUTTON": {
+            "id": 18,
+            "geometry": "Circle/RoundedRect (Radius: 8px)",
+            "states": {
+              "CBS_NORMAL": {
+                "FillColor": "#1E2024",
+                "TopLeftHighlight": "rgba(255,255,255,0.06)",
+                "BottomRightShadow": "rgba(0,0,0,0.60)",
+                "GlyphColor": "#94A3B8"
+              },
+              "CBS_HOT": {
+                "FillColor": "#E11D48",
+                "TopLeftHighlight": "rgba(255,255,255,0.18)",
+                "BottomRightShadow": "rgba(0,0,0,0.70)",
+                "GlyphColor": "#FFFFFF",
+                "Glow": "0 0 10px rgba(225,29,72,0.4)"
+              },
+              "CBS_PUSHED": {
+                "FillColor": "#BE123C",
+                "InnerShadowTopLeft": "rgba(0,0,0,0.75)",
+                "InnerHighlightBottomRight": "rgba(255,255,255,0.04)",
+                "GlyphColor": "#FFFFFF"
+              },
+              "CBS_DISABLED": {
+                "FillColor": "#18191C",
+                "GlyphColor": "#475569"
+              }
+            }
+          },
+          "WP_MINBUTTON": {
+            "id": 15,
+            "geometry": "Circle/RoundedRect (Radius: 8px)",
+            "states": {
+              "MINBS_NORMAL": {
+                "FillColor": "#1E2024",
+                "TopLeftHighlight": "rgba(255,255,255,0.06)",
+                "BottomRightShadow": "rgba(0,0,0,0.60)",
+                "GlyphColor": "#94A3B8"
+              },
+              "MINBS_HOT": {
+                "FillColor": "#25282E",
+                "TopLeftHighlight": "rgba(255,255,255,0.10)",
+                "BottomRightShadow": "rgba(0,0,0,0.70)",
+                "GlyphColor": "#38BDF8"
+              },
+              "MINBS_PUSHED": {
+                "FillColor": "#141517",
+                "InnerShadow": "rgba(0,0,0,0.70)",
+                "GlyphColor": "#38BDF8"
+              }
+            }
+          },
+          "WP_MAXBUTTON": {
+            "id": 17,
+            "geometry": "Circle/RoundedRect (Radius: 8px)",
+            "states": {
+              "MAXBS_NORMAL": {
+                "FillColor": "#1E2024",
+                "TopLeftHighlight": "rgba(255,255,255,0.06)",
+                "BottomRightShadow": "rgba(0,0,0,0.60)",
+                "GlyphColor": "#94A3B8"
+              },
+              "MAXBS_HOT": {
+                "FillColor": "#25282E",
+                "TopLeftHighlight": "rgba(255,255,255,0.10)",
+                "BottomRightShadow": "rgba(0,0,0,0.70)",
+                "GlyphColor": "#38BDF8"
+              },
+              "MAXBS_PUSHED": {
+                "FillColor": "#141517",
+                "InnerShadow": "rgba(0,0,0,0.70)",
+                "GlyphColor": "#38BDF8"
+              }
+            }
+          }
+        }
+      },
+      "Borders": {
+        "WP_FRAMELEFT": { "BorderSize": 1, "Color": "#222428" },
+        "WP_FRAMERIGHT": { "BorderSize": 1, "Color": "#121315" },
+        "WP_FRAMEBOTTOM": { "BorderSize": 1, "Color": "#121315" }
+      }
+    },
+    "Button": {
+      "BP_PUSHBUTTON": {
+        "id": 1,
+        "CornerRadius": 10,
+        "states": {
+          "PBS_NORMAL": {
+            "FillColor": "#1E2024",
+            "TopLeftHighlight": "rgba(255,255,255,0.06)",
+            "BottomRightShadow": "rgba(0,0,0,0.65)",
+            "BorderColor": "rgba(255,255,255,0.03)",
+            "TextColor": "#E2E8F0",
+            "ContentMargins": [16, 8, 16, 8],
+            "SizingMargins": [10, 10, 10, 10]
+          },
+          "PBS_HOT": {
+            "FillColor": "#24272D",
+            "TopLeftHighlight": "rgba(255,255,255,0.09)",
+            "BottomRightShadow": "rgba(0,0,0,0.75)",
+            "BorderColor": "rgba(56,189,248,0.30)",
+            "TextColor": "#F8FAFC"
+          },
+          "PBS_PRESSED": {
+            "FillColor": "#141517",
+            "InnerShadowTopLeft": "rgba(0,0,0,0.80)",
+            "InnerHighlightBottomRight": "rgba(255,255,255,0.04)",
+            "BorderColor": "rgba(0,0,0,0.60)",
+            "TextColor": "#38BDF8"
+          },
+          "PBS_DISABLED": {
+            "FillColor": "#18191C",
+            "TopLeftHighlight": "none",
+            "BottomRightShadow": "none",
+            "TextColor": "#475569"
+          },
+          "PBS_DEFAULTED": {
+            "FillColor": "#1E2024",
+            "BorderColor": "rgba(56,189,248,0.50)",
+            "TopLeftHighlight": "rgba(255,255,255,0.08)",
+            "BottomRightShadow": "rgba(0,0,0,0.70)",
+            "TextColor": "#E2E8F0"
+          }
+        }
+      },
+      "BP_RADIOBUTTON": {
+        "id": 2,
+        "geometry": "Circle (Diameter: 18px)",
+        "states": {
+          "RBS_UNCHECKEDNORMAL": {
+            "FillColor": "#141517",
+            "InnerShadowTopLeft": "rgba(0,0,0,0.60)",
+            "OuterHighlightBottomRight": "rgba(255,255,255,0.04)",
+            "DotColor": "transparent"
+          },
+          "RBS_CHECKEDNORMAL": {
+            "FillColor": "#141517",
+            "InnerShadowTopLeft": "rgba(0,0,0,0.70)",
+            "DotColor": "#38BDF8",
+            "DotGlow": "0 0 6px rgba(56,189,248,0.5)"
+          },
+          "RBS_CHECKEDPRESSED": {
+            "FillColor": "#101113",
+            "DotColor": "#4F80E2"
+          }
+        }
+      },
+      "BP_CHECKBOX": {
+        "id": 3,
+        "CornerRadius": 5,
+        "states": {
+          "CBS_UNCHECKEDNORMAL": {
+            "FillColor": "#141517",
+            "InnerShadowTopLeft": "rgba(0,0,0,0.65)",
+            "OuterBorder": "rgba(255,255,255,0.03)"
+          },
+          "CBS_CHECKEDNORMAL": {
+            "FillColor": "#1E2024",
+            "OuterShadow": "rgba(0,0,0,0.60)",
+            "CheckmarkColor": "#38BDF8",
+            "Glow": "0 0 8px rgba(56,189,248,0.4)"
+          }
+        }
+      }
+    },
+    "Edit": {
+      "EP_EDITTEXT": {
+        "id": 1,
+        "CornerRadius": 8,
+        "states": {
+          "ETS_NORMAL": {
+            "FillColor": "#141517",
+            "InnerShadowTopLeft": "inset 2px 2px 5px rgba(0,0,0,0.70)",
+            "InnerHighlightBottomRight": "inset -1px -1px 3px rgba(255,255,255,0.04)",
+            "BorderColor": "rgba(255,255,255,0.03)",
+            "TextColor": "#E2E8F0"
+          },
+          "ETS_HOT": {
+            "FillColor": "#141517",
+            "BorderColor": "rgba(56,189,248,0.40)",
+            "InnerShadowTopLeft": "inset 2px 2px 5px rgba(0,0,0,0.75)"
+          },
+          "ETS_SELECTED": {
+            "FillColor": "#121315",
+            "BorderColor": "#38BDF8",
+            "InnerShadowTopLeft": "inset 2px 2px 6px rgba(0,0,0,0.85)"
+          }
+        }
+      }
+    },
+    "ComboBox": {
+      "CP_COMBOBOX": {
+        "id": 1,
+        "CornerRadius": 8,
+        "states": {
+          "CBXS_NORMAL": {
+            "FillColor": "#1E2024",
+            "TopLeftHighlight": "rgba(255,255,255,0.06)",
+            "BottomRightShadow": "rgba(0,0,0,0.60)",
+            "ArrowColor": "#94A3B8"
+          },
+          "CBXS_PRESSED": {
+            "FillColor": "#141517",
+            "InnerShadow": "rgba(0,0,0,0.70)",
+            "ArrowColor": "#38BDF8"
+          }
+        }
+      }
+    },
+    "ScrollBar": {
+      "SBP_ARROWBTN": {
+        "FillColor": "#1E2024",
+        "GlyphColor": "#94A3B8",
+        "CornerRadius": 4
+      },
+      "SBP_THUMBBTNHORZ": {
+        "FillColor": "#24272E",
+        "TopLeftHighlight": "rgba(255,255,255,0.08)",
+        "BottomRightShadow": "rgba(0,0,0,0.65)",
+        "CornerRadius": 6
+      },
+      "SBP_THUMBBTNVERT": {
+        "FillColor": "#24272E",
+        "TopLeftHighlight": "rgba(255,255,255,0.08)",
+        "BottomRightShadow": "rgba(0,0,0,0.65)",
+        "CornerRadius": 6
+      },
+      "SBP_LOWERTRACKVERT": {
+        "FillColor": "#141517",
+        "InnerShadow": "rgba(0,0,0,0.50)"
+      },
+      "SBP_UPPERTRACKVERT": {
+        "FillColor": "#141517",
+        "InnerShadow": "rgba(0,0,0,0.50)"
+      }
+    },
+    "TrackBar": {
+      "TKP_TRACK": {
+        "FillColor": "#141517",
+        "InnerShadowTopLeft": "inset 2px 2px 4px rgba(0,0,0,0.75)",
+        "InnerHighlightBottomRight": "inset -1px -1px 2px rgba(255,255,255,0.04)",
+        "CornerRadius": 6,
+        "ActiveProgressTint": "#38BDF8"
+      },
+      "TKP_THUMB": {
+        "FillColor": "#1E2024",
+        "OuterTopLeftHighlight": "3px 3px 6px rgba(255,255,255,0.08)",
+        "OuterBottomRightShadow": "3px 3px 6px rgba(0,0,0,0.70)",
+        "CornerRadius": 12,
+        "CenterIndicator": "#38BDF8"
+      }
+    },
+    "Spin": {
+      "SPNP_UP": {
+        "FillColor": "#1E2024",
+        "CornerRadius": 4,
+        "GlyphColor": "#94A3B8"
+      },
+      "SPNP_DOWN": {
+        "FillColor": "#1E2024",
+        "CornerRadius": 4,
+        "GlyphColor": "#94A3B8"
+      }
+    },
+    "Tab": {
+      "TABP_TABITEM": {
+        "states": {
+          "TIS_NORMAL": {
+            "FillColor": "#18191C",
+            "TextColor": "#94A3B8",
+            "BorderColor": "transparent"
+          },
+          "TIS_HOT": {
+            "FillColor": "#1D1E22",
+            "TextColor": "#E2E8F0"
+          },
+          "TIS_SELECTED": {
+            "FillColor": "#1E2024",
+            "TopLeftHighlight": "rgba(255,255,255,0.07)",
+            "BottomRightShadow": "rgba(0,0,0,0.60)",
+            "TextColor": "#38BDF8",
+            "IndicatorBar": "#38BDF8"
+          }
+        }
+      }
+    },
+    "Taskbar": {
+      "TBP_BACKGROUNDBOTTOM": {
+        "FillColor": "#16171A",
+        "TopBorderHighlight": "rgba(255,255,255,0.05)",
+        "BottomEdge": "#0D0E10"
+      },
+      "TBP_TASKITEM": {
+        "states": {
+          "NORMAL": {
+            "FillColor": "transparent"
+          },
+          "HOVER": {
+            "FillColor": "#1E2024",
+            "TopLeftHighlight": "2px 2px 5px rgba(255,255,255,0.06)",
+            "BottomRightShadow": "2px 2px 5px rgba(0,0,0,0.60)",
+            "CornerRadius": 8
+          },
+          "ACTIVE": {
+            "FillColor": "#1A1B1F",
+            "InnerShadow": "inset 2px 2px 4px rgba(0,0,0,0.70)",
+            "Indicator": "#38BDF8",
+            "CornerRadius": 8
+          }
+        }
+      }
+    }
+  }
+}

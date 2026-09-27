@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neumorphic Dark Soft UI — Interactive Control Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="workspace-viewport">
+    <!-- Ambient directional glow -->
+    <div class="ambient-light-guide"></div>
+
+    <!-- Main Neumorphic Card / Container -->
+    <main class="neumorphic-card" id="neumorphicCard" role="region" aria-label="Tactile Audio Controller">
+      
+      <!-- Header bar with Title, Status & Window Controls -->
+      <header class="card-header">
+        <div class="brand-cluster">
+          <div class="live-status-bead" aria-hidden="true"></div>
+          <div class="title-group">
+            <h1 class="card-title">MASTER AUDIO</h1>
+            <span class="card-subtitle">Tactile Core &bull; DSP Channel 01</span>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="neu-btn-mini" id="overlayToggleBtn" title="Toggle Compact Overlay" aria-label="Toggle Compact Mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="3" y="3" width="18" height="18" rx="4"/>
+              <path d="M9 3v18"/>
+            </svg>
+          </button>
+          <button class="neu-btn-mini" id="muteToggleBtn" title="Toggle Mute" aria-label="Mute Audio">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Digital Readout Panel (Recessed Sunken Bezel) -->
+      <section class="readout-panel-sunken" aria-live="polite">
+        <div class="readout-left">
+          <span class="readout-label">SYSTEM OUTPUT GAIN</span>
+          <div class="readout-value-row">
+            <span class="readout-percent" id="volumeDisplay">72</span>
+            <span class="readout-unit">%</span>
+          </div>
+        </div>
+        <div class="readout-right">
+          <div class="badge-inset">
+            <span class="db-indicator" id="dbDisplay">-4.2 dB</span>
+          </div>
+          <span class="eq-preset-tag">NEU-CURVE A</span>
+        </div>
+      </section>
+
+      <!-- Central Physical Rotary Dial & Surround Visualizer -->
+      <section class="rotary-section">
+        <div class="rotary-circumferential-well" id="dialWell">
+          
+          <!-- Outer Shadow Orbit Tracks -->
+          <div class="dial-orbit-shadow"></div>
+
+          <!-- Main Extruded Rotary Dial -->
+          <div class="rotary-knob-dial" id="rotaryKnob" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72" aria-label="Master Volume Knob">
+            
+            <!-- Dial Bevel Ring -->
+            <div class="dial-machined-ring">
+              <!-- Recessed Inner Cavity -->
+              <div class="dial-sunken-center">
+                <!-- Raised Tactile Finger Cap -->
+                <div class="dial-tactile-cap">
+                  <!-- Active Indicator Pointer Needle -->
+                  <div class="dial-indicator-arm" id="dialPointer">
+                    <div class="indicator-pip"></div>
+                  </div>
+                  <!-- Center Core Gripping Texture -->
+                  <div class="cap-core-matte">
+                    <svg class="audio-wave-glyph" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M2 10v4M6 6v12M10 3v18M14 8v8M18 5v14M22 11v2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Segmented LED Bar Visualizer (Stepped Physical LED Array) -->
+        <div class="segmented-visualizer-dock" aria-hidden="true" id="segmentedVisualizer">
+          <!-- 16 Segmented LED Bars dynamically generated & calibrated -->
+        </div>
+      </section>
+
+      <!-- Quick Adjust Stepper Pill Controls -->
+      <section class="stepper-row">
+        <button class="neu-stepper-btn" id="stepDownBtn" aria-label="Decrease Volume by 5 percent">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+          <span>-5%</span>
+        </button>
+        <div class="stepper-label-track">
+          <span class="track-tick">0</span>
+          <span class="track-tick">25</span>
+          <span class="track-tick">50</span>
+          <span class="track-tick active">75</span>
+          <span class="track-tick">100</span>
+        </div>
+        <button class="neu-stepper-btn" id="stepUpBtn" aria-label="Increase Volume by 5 percent">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+          <span>+5%</span>
+        </button>
+      </section>
+
+      <!-- Lower Nav-Pill Bar (Recessed Soft Channel with Extruded/Inset Toggles) -->
+      <nav class="nav-pill-channel" role="navigation" aria-label="Widget Navigation">
+        <button class="nav-pill-btn active" data-tab="home" title="System Dashboard" aria-label="Home Dashboard">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span class="nav-dot"></span>
+        </button>
+
+        <button class="nav-pill-btn" data-tab="favorites" title="Favorites & Presets" aria-label="Favorites">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <span class="nav-dot"></span>
+        </button>
+
+        <button class="nav-pill-btn" data-tab="notifications" title="System Notifications" aria-label="Notifications">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+          </svg>
+          <span class="nav-dot"></span>
+        </button>
+
+        <button class="nav-pill-btn" data-tab="settings" title="Audio & Theme Settings" aria-label="Settings">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+          </svg>
+          <span class="nav-dot"></span>
+        </button>
+      </nav>
+
+      <!-- Footer Telemetry -->
+      <footer class="card-footer">
+        <span>WINDOWS 11 / 10 &bull; NEUMORPHIC SHELL ENGINE</span>
+        <span class="latency-metric">120 FPS &bull; HARDWARE SYNC</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

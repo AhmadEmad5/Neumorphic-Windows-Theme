@@ -1,0 +1,71 @@
+{
+  "$schema": "https://startallback.com/schema/theme.json",
+  "themeName": "Neumorphic Dark Soft UI",
+  "author": "Neumorphic OS Project",
+  "version": "1.0",
+  "targetOS": "Windows 11 (22H2 / 23H2 / 24H2)",
+  "settings": {
+    "Taskbar": {
+      "Style": "CustomNeumorphic",
+      "DynamicSegments": true,
+      "SegmentRounding": 14,
+      "SegmentMargin": 6,
+      "BackgroundColor": "#18191C",
+      "BackgroundOpacity": 0.95,
+      "BlurType": "Acrylic",
+      "ItemStyle": {
+        "Rounding": 10,
+        "NormalBackground": "transparent",
+        "HoverBackground": "#1E2024",
+        "HoverShadowTopLeft": "rgba(255, 255, 255, 0.06)",
+        "HoverShadowBottomRight": "rgba(0, 0, 0, 0.65)",
+        "RunningIndicatorColor": "#38BDF8",
+        "RunningIndicatorStyle": "PillSegment",
+        "RunningIndicatorThickness": 3,
+        "ActiveBackground": "#141517",
+        "ActiveInnerShadow": "inset 2px 2px 4px rgba(0, 0, 0, 0.75)"
+      },
+      "StartButton": {
+        "CustomIcon": "NeumorphicLogo.ico",
+        "HoverGlowColor": "rgba(56, 189, 248, 0.35)",
+        "PressedScale": 0.95
+      }
+    },
+    "StartMenu": {
+      "Style": "Windows11Enhanced",
+      "CornerRadius": 18,
+      "BackgroundColor": "#18191C",
+      "BorderColor": "rgba(255, 255, 255, 0.05)",
+      "ShadowRadius": 24,
+      "ShadowColor": "rgba(0, 0, 0, 0.70)",
+      "SearchBoxStyle": {
+        "BackgroundColor": "#141517",
+        "InnerShadow": "inset 2px 2px 5px rgba(0, 0, 0, 0.70)",
+        "CornerRadius": 12,
+        "PlaceholderColor": "#64748B",
+        "TextColor": "#E2E8F0"
+      },
+      "PinnedItemsGrid": {
+        "ItemPadding": 10,
+        "HoverElevation": true,
+        "HoverBackground": "#1E2024",
+        "CornerRadius": 10
+      },
+      "UserTile": {
+        "Shape": "Circle",
+        "Elevation": "Extruded"
+      }
+    },
+    "ExplorerAndMenus": {
+      "ModernAddressBar": true,
+      "ClassicRibbon": false,
+      "DarkMenus": true,
+      "MenuPadding": 6,
+      "MenuItemRounding": 8,
+      "MenuBackground": "#1A1B1E",
+      "MenuHoverBackground": "#22252B",
+      "MenuHoverShadow": "2px 2px 5px rgba(0,0,0,0.5)",
+      "AccentColor": "#38BDF8"
+    }
+  }
+}

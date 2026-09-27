@@ -1,0 +1,187 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Neumorphic High-DPI Asset and Coordinate Scaling Matrix",
+  "description": "Exact coordinate metrics, sizing margins, content margins, and shadow offsets across standard Windows DPI scales",
+  "scales": {
+    "100%": {
+      "dpi": 96,
+      "scaleFactor": 1.0,
+      "metrics": {
+        "Button": {
+          "minWidth": 75,
+          "minHeight": 24,
+          "cornerRadius": 8,
+          "contentMargins": { "left": 12, "top": 4, "right": 12, "bottom": 4 },
+          "sizingMargins": { "left": 6, "top": 6, "right": 6, "bottom": 6 },
+          "shadowBlur": 6,
+          "shadowOffset": 3
+        },
+        "CaptionButtons": {
+          "width": 45,
+          "height": 29,
+          "glyphSize": 10,
+          "cornerRadius": 6
+        },
+        "TrackBar": {
+          "trackHeight": 6,
+          "thumbWidth": 16,
+          "thumbHeight": 16,
+          "thumbRadius": 8,
+          "shadowBlur": 4
+        },
+        "ScrollBar": {
+          "size": 15,
+          "thumbMinLength": 24,
+          "arrowButtonSize": 15,
+          "cornerRadius": 4
+        },
+        "EditControl": {
+          "borderPadding": 4,
+          "innerShadowOffset": 2,
+          "cornerRadius": 6
+        },
+        "CardContainer": {
+          "cornerRadius": 16,
+          "shadowSpread": 4,
+          "shadowBlur": 12,
+          "shadowOffset": 6
+        }
+      }
+    },
+    "125%": {
+      "dpi": 120,
+      "scaleFactor": 1.25,
+      "metrics": {
+        "Button": {
+          "minWidth": 94,
+          "minHeight": 30,
+          "cornerRadius": 10,
+          "contentMargins": { "left": 15, "top": 5, "right": 15, "bottom": 5 },
+          "sizingMargins": { "left": 8, "top": 8, "right": 8, "bottom": 8 },
+          "shadowBlur": 8,
+          "shadowOffset": 4
+        },
+        "CaptionButtons": {
+          "width": 56,
+          "height": 36,
+          "glyphSize": 12,
+          "cornerRadius": 8
+        },
+        "TrackBar": {
+          "trackHeight": 8,
+          "thumbWidth": 20,
+          "thumbHeight": 20,
+          "thumbRadius": 10,
+          "shadowBlur": 5
+        },
+        "ScrollBar": {
+          "size": 19,
+          "thumbMinLength": 30,
+          "arrowButtonSize": 19,
+          "cornerRadius": 5
+        },
+        "EditControl": {
+          "borderPadding": 5,
+          "innerShadowOffset": 3,
+          "cornerRadius": 8
+        },
+        "CardContainer": {
+          "cornerRadius": 20,
+          "shadowSpread": 5,
+          "shadowBlur": 15,
+          "shadowOffset": 8
+        }
+      }
+    },
+    "150%": {
+      "dpi": 144,
+      "scaleFactor": 1.5,
+      "metrics": {
+        "Button": {
+          "minWidth": 112,
+          "minHeight": 36,
+          "cornerRadius": 12,
+          "contentMargins": { "left": 18, "top": 6, "right": 18, "bottom": 6 },
+          "sizingMargins": { "left": 9, "top": 9, "right": 9, "bottom": 9 },
+          "shadowBlur": 9,
+          "shadowOffset": 5
+        },
+        "CaptionButtons": {
+          "width": 68,
+          "height": 44,
+          "glyphSize": 14,
+          "cornerRadius": 9
+        },
+        "TrackBar": {
+          "trackHeight": 9,
+          "thumbWidth": 24,
+          "thumbHeight": 24,
+          "thumbRadius": 12,
+          "shadowBlur": 6
+        },
+        "ScrollBar": {
+          "size": 22,
+          "thumbMinLength": 36,
+          "arrowButtonSize": 22,
+          "cornerRadius": 6
+        },
+        "EditControl": {
+          "borderPadding": 6,
+          "innerShadowOffset": 3,
+          "cornerRadius": 9
+        },
+        "CardContainer": {
+          "cornerRadius": 24,
+          "shadowSpread": 6,
+          "shadowBlur": 18,
+          "shadowOffset": 9
+        }
+      }
+    },
+    "200%": {
+      "dpi": 192,
+      "scaleFactor": 2.0,
+      "metrics": {
+        "Button": {
+          "minWidth": 150,
+          "minHeight": 48,
+          "cornerRadius": 16,
+          "contentMargins": { "left": 24, "top": 8, "right": 24, "bottom": 8 },
+          "sizingMargins": { "left": 12, "top": 12, "right": 12, "bottom": 12 },
+          "shadowBlur": 12,
+          "shadowOffset": 6
+        },
+        "CaptionButtons": {
+          "width": 90,
+          "height": 58,
+          "glyphSize": 20,
+          "cornerRadius": 12
+        },
+        "TrackBar": {
+          "trackHeight": 12,
+          "thumbWidth": 32,
+          "thumbHeight": 32,
+          "thumbRadius": 16,
+          "shadowBlur": 8
+        },
+        "ScrollBar": {
+          "size": 30,
+          "thumbMinLength": 48,
+          "arrowButtonSize": 30,
+          "cornerRadius": 8
+        },
+        "EditControl": {
+          "borderPadding": 8,
+          "innerShadowOffset": 4,
+          "cornerRadius": 12
+        },
+        "CardContainer": {
+          "cornerRadius": 32,
+          "shadowSpread": 8,
+          "shadowBlur": 24,
+          "shadowOffset": 12
+        }
+      }
+    }
+  }
+}

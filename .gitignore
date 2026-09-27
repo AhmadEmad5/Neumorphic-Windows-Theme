@@ -1,0 +1,38 @@
+# Visual Studio / .NET Build Artifacts
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+ARM64/
+bld/
+[Bb]in/
+[Oo]bj/
+_UpgradeReport_Files/
+
+# Backup and temporary registry files
+Registry/Backups/
+*.reg.bak
+err.txt
+out.txt
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Package Cache
+*.nupkg
+packages/
+project.lock.json

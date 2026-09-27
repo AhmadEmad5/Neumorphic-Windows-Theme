@@ -1,0 +1,226 @@
+; ==============================================================================
+; Neumorphic Dark Soft UI - Windows Style Builder Text Spec
+; Formatted for Windows Visual Style Engine (uxtheme.dll / SecureUxTheme)
+; ==============================================================================
+
+[Documentation]
+ThemeName = "Neumorphic Dark"
+Author = "Principal Systems Software Engineer"
+Company = "Neumorphic OS Project"
+Version = "1.0.0"
+Description = "Tactile sculpted dark neumorphic theme with soft dual lighting"
+
+[Globals]
+EdgeHighlightColor = 45 48 54
+EdgeShadowColor = 13 14 16
+EdgeFillColor = 30 32 36
+EdgeLightColor = 38 40 46
+FillColor = 30 32 36
+TextColor = 226 232 240
+AccentColor = 56 189 248
+Font = "Segoe UI Variable Text, 9"
+
+; ------------------------------------------------------------------------------
+; WINDOW FRAMES AND CAPTIONS
+; ------------------------------------------------------------------------------
+[Window]
+BgType = BorderFill
+FillColor = 24 25 28
+BorderSize = 1
+BorderColor = 34 36 42
+
+[Window.Caption]
+BgType = BorderFill
+FillColor = 30 32 36
+BorderSize = 0
+SizingMargins = 8, 8, 8, 8
+ContentMargins = 12, 6, 12, 6
+TextColor = 226 232 240
+
+[Window.Caption.Inactive]
+BgType = BorderFill
+FillColor = 24 25 28
+BorderSize = 0
+TextColor = 100 116 139
+
+[Window.CloseButton]
+BgType = BorderFill
+FillColor = 30 32 36
+BorderColor = 38 40 46
+BorderSize = 1
+RoundCorners = 8, 8, 8, 8
+GlyphColor = 148 163 184
+
+[Window.CloseButton.Hot]
+FillColor = 225 29 72
+BorderColor = 244 63 94
+GlyphColor = 255 255 255
+
+[Window.CloseButton.Pushed]
+FillColor = 190 18 60
+BorderColor = 159 18 57
+GlyphColor = 255 255 255
+
+[Window.MinButton]
+BgType = BorderFill
+FillColor = 30 32 36
+BorderColor = 38 40 46
+BorderSize = 1
+RoundCorners = 8, 8, 8, 8
+GlyphColor = 148 163 184
+
+[Window.MinButton.Hot]
+FillColor = 37 40 46
+BorderColor = 56 189 248
+GlyphColor = 56 189 248
+
+[Window.MinButton.Pushed]
+FillColor = 20 21 23
+BorderColor = 13 14 16
+GlyphColor = 56 189 248
+
+[Window.MaxButton]
+BgType = BorderFill
+FillColor = 30 32 36
+BorderColor = 38 40 46
+BorderSize = 1
+RoundCorners = 8, 8, 8, 8
+GlyphColor = 148 163 184
+
+[Window.MaxButton.Hot]
+FillColor = 37 40 46
+BorderColor = 56 189 248
+GlyphColor = 56 189 248
+
+[Window.MaxButton.Pushed]
+FillColor = 20 21 23
+BorderColor = 13 14 16
+GlyphColor = 56 189 248
+
+; ------------------------------------------------------------------------------
+; WIN32 COMMON CONTROLS - BUTTONS
+; ------------------------------------------------------------------------------
+[Button.PushButton]
+BgType = BorderFill
+FillColor = 30 32 36
+BorderColor = 42 44 50
+BorderSize = 1
+RoundCorners = 10, 10, 10, 10
+SizingMargins = 10, 10, 10, 10
+ContentMargins = 16, 8, 16, 8
+TextColor = 226 232 240
+
+[Button.PushButton.Hot]
+FillColor = 36 39 45
+BorderColor = 56 189 248
+TextColor = 248 250 252
+
+[Button.PushButton.Pressed]
+FillColor = 20 21 23
+BorderColor = 13 14 16
+TextColor = 56 189 248
+
+[Button.PushButton.Disabled]
+FillColor = 24 25 28
+BorderColor = 28 30 34
+TextColor = 71 85 105
+
+[Button.RadioButton]
+BgType = BorderFill
+FillColor = 20 21 23
+BorderColor = 38 40 46
+BorderSize = 1
+RoundCorners = 9, 9, 9, 9
+
+[Button.RadioButton.Checked]
+FillColor = 20 21 23
+BorderColor = 56 189 248
+GlyphColor = 56 189 248
+
+[Button.CheckBox]
+BgType = BorderFill
+FillColor = 20 21 23
+BorderColor = 38 40 46
+BorderSize = 1
+RoundCorners = 5, 5, 5, 5
+
+[Button.CheckBox.Checked]
+FillColor = 30 32 36
+BorderColor = 56 189 248
+GlyphColor = 56 189 248
+
+; ------------------------------------------------------------------------------
+; WIN32 COMMON CONTROLS - EDIT / COMBOBOX
+; ------------------------------------------------------------------------------
+[Edit.EditText]
+BgType = BorderFill
+FillColor = 20 21 23
+BorderColor = 30 32 36
+BorderSize = 1
+RoundCorners = 8, 8, 8, 8
+ContentMargins = 8, 6, 8, 6
+TextColor = 226 232 240
+
+[Edit.EditText.Focused]
+BorderColor = 56 189 248
+FillColor = 18 19 21
+
+[ComboBox.DropDown]
+BgType = BorderFill
+FillColor = 30 32 36
+BorderColor = 42 44 50
+BorderSize = 1
+RoundCorners = 8, 8, 8, 8
+TextColor = 226 232 240
+
+; ------------------------------------------------------------------------------
+; WIN32 COMMON CONTROLS - SCROLLBARS
+; ------------------------------------------------------------------------------
+[ScrollBar.Track]
+BgType = BorderFill
+FillColor = 20 21 23
+BorderSize = 0
+
+[ScrollBar.Thumb]
+BgType = BorderFill
+FillColor = 36 39 46
+BorderColor = 45 48 56
+BorderSize = 1
+RoundCorners = 6, 6, 6, 6
+
+[ScrollBar.Thumb.Hot]
+FillColor = 45 48 56
+BorderColor = 56 189 248
+
+; ------------------------------------------------------------------------------
+; WIN32 COMMON CONTROLS - TRACKBAR / SLIDER
+; ------------------------------------------------------------------------------
+[TrackBar.Track]
+BgType = BorderFill
+FillColor = 20 21 23
+BorderColor = 15 16 18
+BorderSize = 1
+RoundCorners = 6, 6, 6, 6
+
+[TrackBar.Thumb]
+BgType = BorderFill
+FillColor = 30 32 36
+BorderColor = 56 189 248
+BorderSize = 1
+RoundCorners = 12, 12, 12, 12
+
+; ------------------------------------------------------------------------------
+; WIN32 COMMON CONTROLS - TABS
+; ------------------------------------------------------------------------------
+[Tab.TabItem]
+BgType = BorderFill
+FillColor = 24 25 28
+TextColor = 148 163 184
+BorderSize = 0
+
+[Tab.TabItem.Selected]
+FillColor = 30 32 36
+BorderColor = 56 189 248
+TextColor = 56 189 248
+BorderSize = 1
+RoundCorners = 8, 8, 0, 0

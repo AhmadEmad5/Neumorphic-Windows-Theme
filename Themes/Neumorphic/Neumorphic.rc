@@ -1,0 +1,70 @@
+// Microsoft Visual C++ generated resource script.
+// Neumorphic Dark Visual Style Resource Definition
+// Architecture: Windows 10 / Windows 11 msstyles binary compilation script
+
+#include <windows.h>
+
+#define THEMES_INI             23
+#define ID_THEMES_INI          1
+
+#define VS_VERSION_INFO        1
+#define VOS_NT_WINDOWS32       0x00040004L
+#define VFT_DLL                0x00000002L
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version Info
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Neumorphic OS Project"
+            VALUE "FileDescription", "Neumorphic Dark Soft UI Visual Style"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Neumorphic.msstyles"
+            VALUE "LegalCopyright", "Copyright (C) 2026"
+            VALUE "OriginalFilename", "Neumorphic.msstyles"
+            VALUE "ProductName", "Neumorphic Dark Windows Theming Suite"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// THEMES_INI (Core Visual Style Definitions and Metrics)
+//
+
+ID_THEMES_INI THEMES_INI "Neumorphic.msstyles.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Tables (Theme Names and Display Strings)
+//
+
+STRINGTABLE
+BEGIN
+    5000 "Neumorphic Dark (Soft UI)"
+    5001 "NormalColor"
+    5002 "NormalSize"
+    5003 "A sculpted, tactile dark neumorphic theme with dual 135-degree lighting."
+END

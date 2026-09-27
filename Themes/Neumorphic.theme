@@ -1,0 +1,81 @@
+; Neumorphic Dark Soft UI Windows Theme File
+; Architecture: Windows 11 / Windows 10 Universal Theme Spec
+; Author: Principal Systems Software Engineer & OS Theming Architect
+
+[Theme]
+DisplayName=Neumorphic Dark (Soft UI)
+ThemeId={7F3E2910-5A3B-4921-9B5C-2E3F4A5B6C7D}
+
+[Control Panel\Desktop]
+Wallpaper=
+Pattern=
+MultimonBackgrounds=0
+PicturePosition=4
+TileWallpaper=0
+WallpaperStyle=10
+AutoColor=0
+
+[VisualStyles]
+Path=%ResourceDir%\Themes\Neumorphic\Neumorphic.msstyles
+ColorStyle=NormalColor
+Size=NormalSize
+Transparency=1
+AppMode=Dark
+SystemMode=Dark
+HighContrast=0
+
+[MasterThemeSelector]
+MTSM=DABABP#
+
+[Control Panel\Colors]
+ActiveBorder=30 32 36
+ActiveTitle=24 25 28
+AppWorkspace=20 21 24
+Background=24 25 28
+ButtonAlternateFace=26 27 30
+ButtonDkShadow=10 10 12
+ButtonFace=30 32 36
+ButtonHilight=45 48 54
+ButtonLight=38 40 46
+ButtonShadow=13 14 16
+ButtonText=226 232 240
+GradientActiveTitle=30 32 36
+GradientInactiveTitle=24 25 28
+GrayText=100 116 139
+Hilight=56 189 248
+HilightText=15 23 42
+HotTrackingColor=79 128 226
+InactiveBorder=24 25 28
+InactiveTitle=20 21 24
+InactiveTitleText=100 116 139
+InfoText=226 232 240
+InfoWindow=30 32 36
+Menu=26 27 30
+MenuBar=24 25 28
+MenuHilight=56 189 248
+MenuText=226 232 240
+Scrollbar=20 21 24
+TitleText=226 232 240
+Window=24 25 28
+WindowFrame=18 19 22
+WindowText=226 232 240
+
+[Control Panel\Cursors]
+Arrow=%SystemRoot%\cursors\aero_arrow.cur
+Help=%SystemRoot%\cursors\aero_helpsel.cur
+AppStarting=%SystemRoot%\cursors\aero_working.ani
+Wait=%SystemRoot%\cursors\aero_busy.ani
+Crosshair=
+IBeam=
+NWPen=%SystemRoot%\cursors\aero_pen.cur
+No=%SystemRoot%\cursors\aero_unavail.cur
+SizeNS=%SystemRoot%\cursors\aero_ns.cur
+SizeWE=%SystemRoot%\cursors\aero_ew.cur
+SizeNWSE=%SystemRoot%\cursors\aero_nwse.cur
+SizeNESW=%SystemRoot%\cursors\aero_nesw.cur
+SizeAll=%SystemRoot%\cursors\aero_move.cur
+UpArrow=%SystemRoot%\cursors\aero_up.cur
+Hand=%SystemRoot%\cursors\aero_link.cur
+
+[Sounds]
+SchemeName=Neumorphic Silent

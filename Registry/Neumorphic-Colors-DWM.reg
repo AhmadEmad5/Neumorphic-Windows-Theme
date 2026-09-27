@@ -1,0 +1,130 @@
+Windows Registry Editor Version 5.00
+
+; ==============================================================================
+; Neumorphic Dark Soft UI - System-Wide Palette & DWM Configuration Patch
+; Author: Principal Systems Software Engineer & OS Theming Architect
+; Architecture: Windows 10 (1903+) / Windows 11 (21H2, 22H2, 23H2, 24H2)
+; ==============================================================================
+
+; ------------------------------------------------------------------------------
+; 1. Global User Palette & Classic Win32 System Colors
+; Base Surface: #18191C (24 25 28)
+; Elevated Controls: #1E2024 (30 32 36)
+; Inset / Sunken: #141517 (20 21 23)
+; Specular Highlight: #2A2C32 (42 44 50)
+; Occlusion Shadow: #0D0E10 (13 14 16)
+; Accent: #38BDF8 (56 189 248)
+; Text: #E2E8F0 (226 232 240)
+; ------------------------------------------------------------------------------
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"ActiveBorder"="30 32 36"
+"ActiveTitle"="24 25 28"
+"AppWorkspace"="20 21 23"
+"Background"="24 25 28"
+"ButtonAlternateFace"="26 27 30"
+"ButtonDkShadow"="10 10 12"
+"ButtonFace"="30 32 36"
+"ButtonHilight"="42 44 50"
+"ButtonLight"="38 40 46"
+"ButtonShadow"="13 14 16"
+"ButtonText"="226 232 240"
+"GradientActiveTitle"="30 32 36"
+"GradientInactiveTitle"="24 25 28"
+"GrayText"="100 116 139"
+"Hilight"="56 189 248"
+"HilightText"="15 23 42"
+"HotTrackingColor"="79 128 226"
+"InactiveBorder"="24 25 28"
+"InactiveTitle"="20 21 23"
+"InactiveTitleText"="100 116 139"
+"InfoText"="226 232 240"
+"InfoWindow"="30 32 36"
+"Menu"="26 27 30"
+"MenuBar"="24 25 28"
+"MenuHilight"="56 189 248"
+"MenuText"="226 232 240"
+"Scrollbar"="20 21 23"
+"TitleText"="226 232 240"
+"Window"="24 25 28"
+"WindowFrame"="18 19 22"
+"WindowText"="226 232 240"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\Colors]
+"ActiveBorder"="30 32 36"
+"ActiveTitle"="24 25 28"
+"AppWorkspace"="20 21 23"
+"Background"="24 25 28"
+"ButtonAlternateFace"="26 27 30"
+"ButtonDkShadow"="10 10 12"
+"ButtonFace"="30 32 36"
+"ButtonHilight"="42 44 50"
+"ButtonLight"="38 40 46"
+"ButtonShadow"="13 14 16"
+"ButtonText"="226 232 240"
+"GradientActiveTitle"="30 32 36"
+"GradientInactiveTitle"="24 25 28"
+"GrayText"="100 116 139"
+"Hilight"="56 189 248"
+"HilightText"="15 23 42"
+"HotTrackingColor"="79 128 226"
+"InactiveBorder"="24 25 28"
+"InactiveTitle"="20 21 23"
+"InactiveTitleText"="100 116 139"
+"InfoText"="226 232 240"
+"InfoWindow"="30 32 36"
+"Menu"="26 27 30"
+"MenuBar"="24 25 28"
+"MenuHilight"="56 189 248"
+"MenuText"="226 232 240"
+"Scrollbar"="20 21 23"
+"TitleText"="226 232 240"
+"Window"="24 25 28"
+"WindowFrame"="18 19 22"
+"WindowText"="226 232 240"
+
+; ------------------------------------------------------------------------------
+; 2. Modern Windows Personalization & System Dark Mode Flags
+; Enforces dark surfaces across UWP, WinUI, File Explorer, and Win32
+; ------------------------------------------------------------------------------
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"AppsUseLightTheme"=dword:00000000
+"SystemUsesLightTheme"=dword:00000000
+"EnableTransparency"=dword:00000001
+"ColorPrevalence"=dword:00000001
+
+; ------------------------------------------------------------------------------
+; 3. Desktop Window Manager (DWM) Attributes & Accent Lighting
+; Accent Color: #38BDF8 with soft alpha blending for subtle glass reflection
+; ------------------------------------------------------------------------------
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+"AccentColor"=dword:fff8bd38
+"AccentColorInactive"=dword:ff242528
+"ColorizationColor"=dword:6638bdf8
+"ColorizationAfterglow"=dword:6638bdf8
+"ColorizationBlurBalance"=dword:0000001e
+"ColorizationGlassAttribute"=dword:00000001
+"Composition"=dword:00000001
+"ColorPrevalence"=dword:00000001
+
+; ------------------------------------------------------------------------------
+; 4. ClearType Subpixel Font Rendering & Smoothing Calibration
+; Ensures high-contrast crisp text rendering against dark neumorphic matte
+; ------------------------------------------------------------------------------
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"FontSmoothing"="2"
+"FontSmoothingType"=dword:00000002
+"FontSmoothingGamma"=dword:00000578
+"FontSmoothingOrientation"=dword:00000001
+
+; ------------------------------------------------------------------------------
+; 5. Modern Shell Context Menus & Padding Customization
+; Restores clean padded context menus matching dark neumorphic surfaces
+; ------------------------------------------------------------------------------
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32]
+@=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarAnimations"=dword:00000001
+"TaskbarSizeMove"=dword:00000000
+"ListviewAlphaSelect"=dword:00000001
+"ListviewShadow"=dword:00000000
